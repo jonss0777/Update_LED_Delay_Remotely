@@ -18,7 +18,7 @@ We will be using:
 
 
 ### Code Overview
-The code connects to the App Script endpoint using the following steps.
+#### Micro Controller Code: 
 
 1. Connects to WiFi
 2. Sets Google Certificate 
@@ -28,9 +28,8 @@ The code connects to the App Script endpoint using the following steps.
 6. The micro controller initializes a connection with the script.googleusercontent.com server and sends a get request to the Location url. 
 7. The micro controller receives the plain text response and updates the currPeriod variable. 
 
-Web App Code.
-
-
+#### Web App Code
 The post request writes the previous, current delay period in the micro controller, delay period in the (1,2) cell. Then reads the delay period from the (2,2) cell and sends it back to the micro controller. The micro controller reads it and it updates its currPeriod variable.
+
 
 
