@@ -11,7 +11,7 @@ We will be using:
 - Small bread board
 
 ### Wiring 
-![ESP32 with Yellow LED](images\Wiring.jpeg)
+![ESP32 with Yellow LED](https://github.com/jonss0777/Update_LED_Delay_Remotely/blob/f3449b286f97759d9df148884882e138d0576a16/images/Wiring.jpeg)
 
 
 
@@ -28,5 +28,6 @@ The code connects to the App Script endpoint using the following steps.
 7. The micro controller receives the plain text response and updates the currPeriod variable. 
 
 Web App Code.
+
 
 The post request writes the previous, current delay period in the micro controller, delay period in the (1,2) cell. Then reads the delay period from the (2,2) cell and sends it back to the micro controller. The micro controller reads it and it updates its currPeriod variable.
