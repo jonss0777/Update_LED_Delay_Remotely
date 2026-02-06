@@ -1,6 +1,6 @@
 # Update LED Delay Remotely 
 
-**Goal:** In this project we will be updating the delay period remotely. To achieve this we will learn about https, Arduino programming, and App Script Web Apps.
+**Goal:** In this project we will be updating the delay period remotely. To achieve this we will use https, Arduino programming, and App Script Web Apps.
 
 ### Tools
 We will be using:
@@ -31,6 +31,7 @@ Pins used: 2 GPIO, GND
 
 #### Web App Code:
 The post request writes the previous, current delay period in the micro controller, delay period in the (1,2) cell. It then reads the delay period from the (2,2) cell and sends it back to the micro controller. The micro controller reads it and it updates its currPeriod variable.
+
 
 
 
