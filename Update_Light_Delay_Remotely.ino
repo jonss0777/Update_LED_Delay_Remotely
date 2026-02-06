@@ -15,11 +15,11 @@
 #include <secrets.h>
 
 // WiFi Credentials
-const char* ssid = "";
-const char* password = "";
+// const char* ssid = "";
+// const char* password = "";
 
-// AppScript Endpoint
-const char* endpoint = "";
+// // AppScript Endpoint
+// const char* endpoint = "";
 
 WiFiClientSecure secureClient;
 HTTPClient http;
@@ -141,8 +141,10 @@ void setup() {
 }
 
 // the loop function runs over and over again forever
+// the off state takes a little longer because of the doPost()
 void loop() {
   doPost(String(currPeriod));                         // updates currPeriod
+  Serial.println(currPeriod);
   digitalWrite(LED_BUILTIN, HIGH);  // turn the LED on (HIGH is the voltage level)
   delay(currPeriod);
   digitalWrite(LED_BUILTIN, LOW);
