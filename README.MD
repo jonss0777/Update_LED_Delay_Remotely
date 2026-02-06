@@ -12,7 +12,7 @@ We will be using:
 
 ### Wiring 
 
-<img src="https://github.com/jonss0777/Update_LED_Delay_Remotely/blob/f3449b286f97759d9df148884882e138d0576a16/images/Wiring.jpeg" width="500" height="500">
+<img src="https://github.com/jonss0777/Update_LED_Delay_Remotely/blob/1b8e3568eade35dce81c23b3c0b954239bbbcdfc/images/Board.png" width="500" height="500">
 
 ```
 Pins used: 2 GPIO, GND
@@ -31,6 +31,7 @@ Pins used: 2 GPIO, GND
 
 #### Web App Code:
 The post request writes the previous, current delay period in the micro controller, delay period in the (1,2) cell. Then reads the delay period from the (2,2) cell and sends it back to the micro controller. The micro controller reads it and it updates its currPeriod variable.
+
 
 
 
